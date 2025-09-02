@@ -44,6 +44,11 @@ Here are some real-life photos of the TinyLora-C3 terminal:
 1. High-power modules require two LDOs connected in parallel for power supply.  
 2. High-power modules cannot use FPC antennas; only rubber duck or suction-cup antennas can be used.
 
+## Firmware / Software Support
+
+- Meshtastic firmware is currently being organized.  
+- Supports programming under Arduino using RadioLib library.
+
 
 
 Custom License
