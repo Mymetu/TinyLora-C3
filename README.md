@@ -9,7 +9,7 @@ The cheapest Meshtastic terminal, compatible with various LoRa modules.
 
 ## Supported Modules
 
-| Module Name | Chip | Price (USD) | BOM Cost (excluding PCB & antenna, USD) | Purchase Source | Notes |
+| Module Name | Chip | Price (CNY) | BOM Cost (excluding PCB & antenna, USD) | Purchase Source | Notes |
 | ----------- | ---- | ----------- | -------------------------------------- | --------------- | ----- |
 | 255MN-L03   | LLCC68 | 9.9   | ~19.9 | Taobao (255mesh shop) | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
 | RA-01SC     | LLCC68 | 11.9  | ~21.9 | Taobao (Youxin, IPEX version) | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
