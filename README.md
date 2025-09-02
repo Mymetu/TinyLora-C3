@@ -1,5 +1,5 @@
 # TinyLora-C3
-The cheapest Meshtastic terminal, compatible with various LoRa modules.
+The cheapest Meshtastic device(in China), compatible with various LoRa modules.
 
 
 ## Files
@@ -11,15 +11,15 @@ The cheapest Meshtastic terminal, compatible with various LoRa modules.
 
 | Module Name | Chip | Price (CNY) | BOM Cost (excluding PCB & antenna, CNY) | Purchase Source | Notes |
 | ----------- | ---- | ----------- | -------------------------------------- | --------------- | ----- |
-| 255MN-L03   | LLCC68 | 9.9   | ~19.9 | Taobao (255mesh shop) | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
-| RA-01SC     | LLCC68 | 11.9  | ~21.9 | Taobao (Youxin, IPEX version) | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
-| HT-RA62     | SX1262 | 21.9  | ~31.9 | Taobao (Huite Automation shop) | Full Meshtastic LoRa mode support |
-| RA-01SC-P   | LLCC68 | 16.5  | ~26.5 | Taobao (Youxin, IPEX version) | LLCC68 does not support Meshtastic long mode, mediumslow recommended<br>High power, default LDO not sufficient; add an extra LDO or use a higher-power LDO/DCDC<br>External amplifier, software setting 22 actually gives 29 |
-| RA-01S-P    | SX1268 | 21.2  | ~31.2 | Taobao (Youxin, IPEX version) | Full Meshtastic LoRa mode support<br>High power, default LDO not sufficient; add an extra LDO or use a higher-power LDO/DCDC<br>External amplifier, software setting 22 actually gives 29 |
+| 255MN-L03   | LLCC68 | 9.9   | ~19.9 | AliExpress | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
+| RA-01SC     | LLCC68 | 11.9  | ~21.9 | AliExpress | LLCC68 does not support Meshtastic long mode, mediumslow recommended |
+| HT-RA62     | SX1262 | 21.9  | ~31.9 | AliExpress | Full Meshtastic LoRa mode support |
+| RA-01SC-P   | LLCC68 | 16.5  | ~26.5 | AliExpress | LLCC68 does not support Meshtastic long mode, mediumslow recommended<br>High power, default LDO not sufficient; add an extra LDO or use a higher-power LDO/DCDC<br>External amplifier, software setting 22 actually gives 29 |
+| RA-01S-P    | SX1268 | 21.2  | ~31.2 | AliExpress | Full Meshtastic LoRa mode support<br>High power, default LDO not sufficient; add an extra LDO or use a higher-power LDO/DCDC<br>External amplifier, software setting 22 actually gives 29 |
 
 ## Photos
 
-Here are some real-life photos of the TinyLora-C3 terminal:
+Here are some real-life photos of the TinyLora-C3:
 
 ![1](./1.png)  
 ![2](./2.png)  
@@ -30,26 +30,21 @@ Here are some real-life photos of the TinyLora-C3 terminal:
 ![1](./1.jpg)  
 ![2](./2.jpg)  
 
-*These photos show various views of the TinyLora-C3 terminal and its PCB.*
+*These photos show various views of the TinyLora-C3.*
 
 ## Notes / Warnings
 
 ### Antenna
 
-- The 2.4 GHz antenna is not optimized, but Bluetooth connection to a phone works fine.  
-- LoRa antenna has a simple matching, but the performance is definitely not as good as a rubber duck antenna.  
-- If using an external IPEX antenna, remove R32 first.  
-- The RA62 module may only work with an IPEX antenna. If you can modify the RA62 module resistors, it can use the SMD antenna.
+- The 2.4 GHz antenna is not tested by VNA, but Bluetooth connection to a phone works fine.  
+- onboard ceramic LoRa antenna, but the performance is limited.  
+- If you willing to use an external IPEX antenna, remove R32 first.  
+- The RA62 module only work with an IPEX antenna. Further modification on the module required if you need onboard ceramic antenna.
 
 ### High-Power Modules
 
-1. High-power modules require two LDOs connected in parallel for power supply.  
-2. High-power modules cannot use FPC antennas; only rubber duck or suction-cup antennas can be used.
-
-## Firmware / Software Support
-
-- Meshtastic firmware is currently being organized.  
-- Supports programming under Arduino using RadioLib library.
+1. High-power modules (all modules listed with "-P" suffix) require two LDOs connected in parallel for power supply.  
+2. Check the maximum transmit power the antenna is designed to handle while using High-Power modules;FPC antenna is not recommended.
 
 ## Bill of Materials (BOM)
 
