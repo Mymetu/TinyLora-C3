@@ -19,6 +19,19 @@ The cheapest Meshtastic terminal, compatible with various LoRa modules.
 
 ## Photos
 
+Here are some real-life photos of the TinyLora-C3 terminal:
+
+![1](./photos/1.png)  
+![2](./photos/2.png)  
+![3](./photos/3.png)  
+![4](./photos/4.png)  
+![5](./photos/5.png)  
+
+![1](./photos/1.jpg)  
+![2](./photos/2.jpg)  
+
+*All photos show different views of the TinyLora-C3 terminal and its PCB.*
+
 
 
 
