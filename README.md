@@ -32,7 +32,17 @@ Here are some real-life photos of the TinyLora-C3 terminal:
 
 *These photos show various views of the TinyLora-C3 terminal and its PCB.*
 
+## Notes / Warnings
 
+### Antenna
+
+- The 2.4 GHz antenna is not optimized, but Bluetooth connection to a phone works fine.  
+- LoRa antenna has a simple matching, but the performance is definitely not as good as a rubber duck antenna.
+
+### High-Power Modules
+
+1. High-power modules require two LDOs connected in parallel for power supply.  
+2. High-power modules cannot use FPC antennas; only rubber duck or suction-cup antennas can be used.
 
 
 
